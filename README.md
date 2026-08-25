@@ -9,10 +9,6 @@ Users can submit their electronic waste, verify their device through an image, f
 
 Recycling organizations can manage recycling requests and view basic e-waste statistics.
 
-## 🌍 SDG 12
-
-EcoLoop supports **Sustainable Development Goal 12: Responsible Consumption and Production** by promoting responsible disposal and recycling of electronic waste.
-
 ## ✨ Main Features
 
 - User registration and login
