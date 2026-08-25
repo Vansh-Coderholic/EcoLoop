@@ -23,19 +23,6 @@ Recycling organizations can manage recycling requests and view basic e-waste sta
 - Recycler dashboard
 - Basic recycling analytics
 
-## 🛠️ Technologies
-
-- HTML
-- CSS
-- JavaScript
-- Node.js
-- Express.js
-- MySQL
-- OpenCV
-- Leaflet.js
-- OpenStreetMap
-- Chart.js
-
 ## 📌 Project Status
 
 🚧 **Currently in development**
