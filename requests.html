@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recycling Requests | EcoLoop</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="requests-page">
+
+    <!-- ================= HEADER ================= -->
+    <header class="dashboard-header">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-image-box">
+                <img src="logo.png" alt="EcoLoop Logo">
+            </div>
+
+            <div class="logo-brand-name">
+                Eco<span>Loop</span>
+            </div>
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= PAGE LAYOUT ================= -->
+    <main class="recycler-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="recycler-sidebar">
+
+            <!-- RECYCLER PROFILE -->
+            <div class="sidebar-profile">
+
+                <div class="profile-circle">
+                    GC
+                </div>
+
+                <div class="profile-info">
+                    <h4>GreenCycle Center</h4>
+                    <p>Recycler account</p>
+                </div>
+
+            </div>
+
+
+            <!-- ================= SIDEBAR NAVIGATION ================= -->
+            <nav class="sidebar-menu">
+
+                <a href="recycler.html" class="sidebar-link">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+
+                <a href="requests.html" class="sidebar-link active">
+
+                    <span>▣</span>
+
+                    Requests
+
+                    <span class="request-count">
+                        6
+                    </span>
+
+                </a>
+
+
+                <a href="analytics.html" class="sidebar-link">
+                    <span>▥</span>
+                    Analytics
+                </a>
+
+
+                <a href="#" class="sidebar-link">
+                    <span>⌂</span>
+                    Center profile
+                </a>
+
+            </nav>
+
+
+            <!-- ================= LOGOUT ================= -->
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutButton"
+            >
+                ⇥ &nbsp; Log out
+            </button>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <section class="requests-content">
+
+
+            <!-- ================= PAGE INTRO ================= -->
+            <div class="requests-intro">
+
+                <p>
+                    Review, schedule and confirm incoming devices
+                </p>
+
+                <h1>
+                    Recycling requests
+                </h1>
+
+            </div>
+
+
+            <!-- ================= FILTER + SEARCH ================= -->
+            <div class="request-controls">
+
+
+                <!-- FILTER BUTTONS -->
+                <div class="request-filters">
+
+                    <button
+                        type="button"
+                        class="filter-button active"
+                        data-filter="all"
+                    >
+                        All
+                        <span id="allCount">8</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="filter-button"
+                        data-filter="pending"
+                    >
+                        Pending
+                        <span id="pendingCount">4</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="filter-button"
+                        data-filter="scheduled"
+                    >
+                        Scheduled
+                        <span id="scheduledCount">2</span>
+                    </button>
+
+
+                    <button
+                        type="button"
+                        class="filter-button"
+                        data-filter="recycled"
+                    >
+                        Recycled
+                        <span id="recycledCount">2</span>
+                    </button>
+
+                </div>
+
+
+                <!-- SEARCH -->
+                <div class="request-search">
+
+                    <input
+                        type="text"
+                        id="requestSearch"
+                        placeholder="Search by user or device"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= REQUEST TABLE CARD ================= -->
+            <div class="requests-table-card">
+
+                <div class="table-container">
+
+                    <table class="request-table">
+
+
+                        <!-- TABLE HEAD -->
+                        <thead>
+
+                            <tr>
+                                <th>User</th>
+                                <th>Device</th>
+                                <th>Date</th>
+                                <th>Location</th>
+                                <th>Status</th>
+                                <th>Action</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <!-- TABLE BODY -->
+                        <tbody id="fullRequestTableBody">
+
+
+                            <!-- ================= REQUEST 1 ================= -->
+                            <tr
+                                class="request-row"
+                                data-request-id="1"
+                                data-status="pending"
+                            >
+
+                                <td>
+                                    <strong>Aarav Mehta</strong>
+                                </td>
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▰
+                                        </div>
+
+                                        <div>
+                                            <strong>Dell Inspiron Laptop</strong>
+                                            <small>Laptops</small>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Sep 19</td>
+
+                                <td>
+                                    Andheri West
+                                    <small>Pickup</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        ● Pending
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        type="button"
+                                        class="schedule-button"
+                                        data-request-id="1"
+                                    >
+                                        Schedule
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ================= REQUEST 2 ================= -->
+                            <tr
+                                class="request-row"
+                                data-request-id="2"
+                                data-status="pending"
+                            >
+
+                                <td>
+                                    <strong>Priya Nair</strong>
+                                </td>
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▯
+                                        </div>
+
+                                        <div>
+                                            <strong>OnePlus 9 Phone</strong>
+                                            <small>Phones &amp; tablets</small>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Sep 19</td>
+
+                                <td>
+                                    Powai
+                                    <small>Drop-off</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        ● Pending
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        type="button"
+                                        class="schedule-button"
+                                        data-request-id="2"
+                                    >
+                                        Schedule
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ================= REQUEST 3 ================= -->
+                            <tr
+                                class="request-row"
+                                data-request-id="3"
+                                data-status="scheduled"
+                            >
+
+                                <td>
+                                    <strong>Rohan Iyer</strong>
+                                </td>
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▣
+                                        </div>
+
+                                        <div>
+                                            <strong>LG 27" Monitor</strong>
+                                            <small>TVs &amp; monitors</small>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Sep 18</td>
+
+                                <td>
+                                    Bandra East
+                                    <small>Pickup</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status scheduled">
+                                        ● Scheduled
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        type="button"
+                                        class="confirm-button"
+                                        data-request-id="3"
+                                    >
+                                        Confirm Recycling
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ================= REQUEST 4 ================= -->
+                            <tr
+                                class="request-row"
+                                data-request-id="4"
+                                data-status="pending"
+                            >
+
+                                <td>
+                                    <strong>Sneha Kulkarni</strong>
+                                </td>
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▯
+                                        </div>
+
+                                        <div>
+                                            <strong>Samsung Galaxy S21</strong>
+                                            <small>Phones &amp; tablets</small>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Sep 18</td>
+
+                                <td>
+                                    Thane West
+                                    <small>Pickup</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        ● Pending
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        type="button"
+                                        class="schedule-button"
+                                        data-request-id="4"
+                                    >
+                                        Schedule
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ================= REQUEST 5 ================= -->
+                            <tr
+                                class="request-row"
+                                data-request-id="5"
+                                data-status="scheduled"
+                            >
+
+                                <td>
+                                    <strong>Karan Shah</strong>
+                                </td>
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▰
+                                        </div>
+
+                                        <div>
+                                            <strong>Lenovo ThinkPad T14</strong>
+                                            <small>Laptops</small>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Sep 17</td>
+
+                                <td>
+                                    Borivali West
+                                    <small>Pickup</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status scheduled">
+                                        ● Scheduled
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        type="button"
+                                        class="confirm-button"
+                                        data-request-id="5"
+                                    >
+                                        Confirm Recycling
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ================= REQUEST 6 ================= -->
+                            <tr
+                                class="request-row"
+                                data-request-id="6"
+                                data-status="recycled"
+                            >
+
+                                <td>
+                                    <strong>Ananya Rao</strong>
+                                </td>
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▣
+                                        </div>
+
+                                        <div>
+                                            <strong>HP LaserJet Printer</strong>
+                                            <small>Other</small>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Sep 17</td>
+
+                                <td>
+                                    Goregaon East
+                                    <small>Drop-off</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status recycled">
+                                        ● Recycled
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <span class="completed-text">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ================= REQUEST 7 ================= -->
+                            <tr
+                                class="request-row"
+                                data-request-id="7"
+                                data-status="recycled"
+                            >
+
+                                <td>
+                                    <strong>Vikram Desai</strong>
+                                </td>
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ♧
+                                        </div>
+
+                                        <div>
+                                            <strong>Laptop chargers (6)</strong>
+                                            <small>Chargers &amp; cables</small>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Sep 16</td>
+
+                                <td>
+                                    Dadar
+                                    <small>Drop-off</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status recycled">
+                                        ● Recycled
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <span class="completed-text">
+                                        Completed
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- ================= REQUEST 8 ================= -->
+                            <tr
+                                class="request-row"
+                                data-request-id="8"
+                                data-status="pending"
+                            >
+
+                                <td>
+                                    <strong>Isha Kapoor</strong>
+                                </td>
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▭
+                                        </div>
+
+                                        <div>
+                                            <strong>UPS batteries (4)</strong>
+                                            <small>Batteries</small>
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>Sep 15</td>
+
+                                <td>
+                                    Vashi
+                                    <small>Pickup</small>
+                                </td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        ● Pending
+                                    </span>
+
+                                </td>
+
+                                <td>
+
+                                    <button
+                                        type="button"
+                                        class="schedule-button"
+                                        data-request-id="8"
+                                    >
+                                        Schedule
+                                    </button>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+
+                <!-- ================= TABLE FOOTER ================= -->
+                <div class="requests-table-footer">
+
+                    <p id="requestResultText">
+                        Showing 8 of 8 requests
+                    </p>
+
+                    <p>
+                        Schedule a pickup or drop-off, then confirm once
+                        the device is recycled.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

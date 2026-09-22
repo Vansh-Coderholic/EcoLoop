@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Recycler Dashboard | EcoLoop</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="recycler-page">
+
+    <!-- ================= HEADER ================= -->
+    <header class="dashboard-header">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-image-box">
+                <img src="logo.png" alt="EcoLoop Logo">
+            </div>
+
+            <div class="logo-brand-name">
+                Eco<span>Loop</span>
+            </div>
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD LAYOUT ================= -->
+    <main class="recycler-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="recycler-sidebar">
+
+            <!-- Recycler Profile -->
+            <div class="sidebar-profile">
+
+                <div class="profile-circle">
+                    GC
+                </div>
+
+                <div class="profile-info">
+                    <h4>GreenCycle Center</h4>
+                    <p>Recycler account</p>
+                </div>
+
+            </div>
+
+
+            <!-- ================= NAVIGATION ================= -->
+            <nav class="sidebar-menu">
+
+                <!-- Dashboard -->
+                <a href="recycler.html"
+                   class="sidebar-link active">
+
+                    <span>▦</span>
+                    Dashboard
+
+                </a>
+
+
+                <!-- Requests -->
+                <a href="requests.html"
+                   class="sidebar-link">
+
+                    <span>▣</span>
+                    Requests
+
+                    <span class="request-count">
+                        6
+                    </span>
+
+                </a>
+
+
+                <!-- Analytics -->
+                <a href="analytics.html"
+                   class="sidebar-link">
+
+                    <span>▥</span>
+                    Analytics
+
+                </a>
+
+
+                <!-- Center Profile - Future -->
+                <a href="#"
+                   class="sidebar-link">
+
+                    <span>⌂</span>
+                    Center profile
+
+                </a>
+
+            </nav>
+
+
+            <!-- Logout -->
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutButton"
+            >
+                ⇥ &nbsp; Log out
+            </button>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <section class="recycler-content">
+
+
+            <!-- ================= DASHBOARD ================= -->
+            <div
+                class="dashboard-section"
+                id="dashboardSection"
+            >
+
+
+                <!-- Date -->
+                <p class="dashboard-date">
+                    Saturday, 19 September 2026
+                </p>
+
+
+                <!-- Heading -->
+                <div class="dashboard-title-row">
+
+                    <h1>
+                        Recycler dashboard
+                    </h1>
+
+                </div>
+
+
+                <!-- ================= STATS ================= -->
+                <div class="recycler-stats">
+
+
+                    <!-- Total Devices -->
+                    <div class="stat-card stat-card-green">
+
+                        <p>
+                            Total devices recycled
+                        </p>
+
+                        <h2 id="totalDevices">
+                            1,284
+                        </h2>
+
+                        <small>
+                            +138 this month
+                        </small>
+
+                    </div>
+
+
+                    <!-- Pending Requests -->
+                    <div class="stat-card stat-card-yellow">
+
+                        <p>
+                            Pending requests
+                        </p>
+
+                        <h2 id="pendingRequests">
+                            6
+                        </h2>
+
+                        <small>
+                            Waiting for a response
+                        </small>
+
+                    </div>
+
+
+                    <!-- Total E-Waste -->
+                    <div class="stat-card">
+
+                        <p>
+                            Total e-waste collected
+                        </p>
+
+                        <h2>
+                            3,420 kg
+                        </h2>
+
+                        <small class="green-text">
+                            +375 kg this month
+                        </small>
+
+                    </div>
+
+
+                    <!-- Most Common Category -->
+                    <div class="stat-card stat-card-cream">
+
+                        <p>
+                            Most common category
+                        </p>
+
+                        <h3>
+                            Phones &amp; tablets
+                        </h3>
+
+                        <small class="green-text">
+                            34% of all devices
+                        </small>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= RECENT REQUESTS ================= -->
+                <div class="requests-card">
+
+
+                    <!-- Heading -->
+                    <div class="requests-heading">
+
+                        <h2>
+                            Recent recycling requests
+                        </h2>
+
+
+                        <!-- FIXED -->
+                        <a
+                            href="requests.html"
+                            class="view-requests-button"
+                        >
+                            View all requests
+                        </a>
+
+                    </div>
+
+
+                    <!-- ================= REQUEST TABLE ================= -->
+                    <div class="table-container">
+
+                        <table class="request-table">
+
+
+                            <!-- TABLE HEAD -->
+                            <thead>
+
+                                <tr>
+
+                                    <th>User</th>
+                                    <th>Device</th>
+                                    <th>Date</th>
+                                    <th>Location</th>
+                                    <th>Status</th>
+                                    <th>Action</th>
+
+                                </tr>
+
+                            </thead>
+
+
+                            <!-- TABLE BODY -->
+                            <tbody id="requestTableBody">
+
+
+                                <!-- ================= REQUEST 1 ================= -->
+                                <tr data-request-id="1">
+
+                                    <td>
+                                        <strong>
+                                            Aarav Mehta
+                                        </strong>
+                                    </td>
+
+
+                                    <td>
+
+                                        <div class="device-info">
+
+                                            <div class="device-icon">
+                                                ▰
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    Dell Inspiron Laptop
+                                                </strong>
+
+                                                <small>
+                                                    Laptops
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+                                        Sep 19
+                                    </td>
+
+
+                                    <td>
+
+                                        Andheri West
+
+                                        <small>
+                                            Pickup
+                                        </small>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="status pending">
+                                            ● Pending
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="schedule-button"
+                                            data-request-id="1"
+                                        >
+                                            Schedule
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ================= REQUEST 2 ================= -->
+                                <tr data-request-id="2">
+
+                                    <td>
+                                        <strong>
+                                            Priya Nair
+                                        </strong>
+                                    </td>
+
+
+                                    <td>
+
+                                        <div class="device-info">
+
+                                            <div class="device-icon">
+                                                ▯
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    OnePlus 9 Phone
+                                                </strong>
+
+                                                <small>
+                                                    Phones &amp; tablets
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+                                        Sep 19
+                                    </td>
+
+
+                                    <td>
+
+                                        Powai
+
+                                        <small>
+                                            Drop-off
+                                        </small>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="status pending">
+                                            ● Pending
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="schedule-button"
+                                            data-request-id="2"
+                                        >
+                                            Schedule
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ================= REQUEST 3 ================= -->
+                                <tr data-request-id="3">
+
+                                    <td>
+                                        <strong>
+                                            Rohan Iyer
+                                        </strong>
+                                    </td>
+
+
+                                    <td>
+
+                                        <div class="device-info">
+
+                                            <div class="device-icon">
+                                                ▣
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    LG 27" Monitor
+                                                </strong>
+
+                                                <small>
+                                                    TVs &amp; monitors
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+                                        Sep 18
+                                    </td>
+
+
+                                    <td>
+
+                                        Bandra East
+
+                                        <small>
+                                            Pickup
+                                        </small>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="status scheduled">
+                                            ● Scheduled
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="confirm-button"
+                                            data-request-id="3"
+                                        >
+                                            Confirm Recycling
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ================= REQUEST 4 ================= -->
+                                <tr data-request-id="4">
+
+                                    <td>
+                                        <strong>
+                                            Sneha Kulkarni
+                                        </strong>
+                                    </td>
+
+
+                                    <td>
+
+                                        <div class="device-info">
+
+                                            <div class="device-icon">
+                                                ▯
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    Samsung Galaxy S21
+                                                </strong>
+
+                                                <small>
+                                                    Phones &amp; tablets
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+                                        Sep 18
+                                    </td>
+
+
+                                    <td>
+
+                                        Thane West
+
+                                        <small>
+                                            Pickup
+                                        </small>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="status pending">
+                                            ● Pending
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="schedule-button"
+                                            data-request-id="4"
+                                        >
+                                            Schedule
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ================= REQUEST 5 ================= -->
+                                <tr data-request-id="5">
+
+                                    <td>
+                                        <strong>
+                                            Karan Shah
+                                        </strong>
+                                    </td>
+
+
+                                    <td>
+
+                                        <div class="device-info">
+
+                                            <div class="device-icon">
+                                                ▰
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    Lenovo ThinkPad T14
+                                                </strong>
+
+                                                <small>
+                                                    Laptops
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+                                        Sep 17
+                                    </td>
+
+
+                                    <td>
+
+                                        Borivali West
+
+                                        <small>
+                                            Pickup
+                                        </small>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="status scheduled">
+                                            ● Scheduled
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <button
+                                            type="button"
+                                            class="confirm-button"
+                                            data-request-id="5"
+                                        >
+                                            Confirm Recycling
+                                        </button>
+
+                                    </td>
+
+                                </tr>
+
+
+                                <!-- ================= REQUEST 6 ================= -->
+                                <tr data-request-id="6">
+
+                                    <td>
+                                        <strong>
+                                            Ananya Rao
+                                        </strong>
+                                    </td>
+
+
+                                    <td>
+
+                                        <div class="device-info">
+
+                                            <div class="device-icon">
+                                                ▣
+                                            </div>
+
+                                            <div>
+
+                                                <strong>
+                                                    HP LaserJet Printer
+                                                </strong>
+
+                                                <small>
+                                                    Other
+                                                </small>
+
+                                            </div>
+
+                                        </div>
+
+                                    </td>
+
+
+                                    <td>
+                                        Sep 17
+                                    </td>
+
+
+                                    <td>
+
+                                        Goregaon East
+
+                                        <small>
+                                            Drop-off
+                                        </small>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="status recycled">
+                                            ● Recycled
+                                        </span>
+
+                                    </td>
+
+
+                                    <td>
+
+                                        <span class="completed-text">
+                                            Completed
+                                        </span>
+
+                                    </td>
+
+                                </tr>
+
+
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

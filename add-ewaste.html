@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Add E-Waste | EcoLoop</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="add-ewaste-page">
+
+    <!-- ================= HEADER ================= -->
+    <header class="dashboard-header">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-image-box">
+                <img src="logo.png" alt="EcoLoop Logo">
+            </div>
+
+            <div class="logo-brand-name">
+                Eco<span>Loop</span>
+            </div>
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= PAGE LAYOUT ================= -->
+    <main class="user-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="user-sidebar">
+
+            <!-- USER PROFILE -->
+            <div class="sidebar-profile">
+
+                <div class="profile-circle">
+                    RC
+                </div>
+
+                <div class="profile-info">
+
+                    <h4 id="userName">
+                        Robert
+                    </h4>
+
+                    <p>
+                        User Account
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIDEBAR NAVIGATION -->
+            <nav class="sidebar-menu">
+
+                <a href="user.html" class="sidebar-link">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+
+                <a href="add-ewaste.html" class="sidebar-link active">
+                    <span>⊕</span>
+                    Add E-Waste
+                </a>
+
+
+                <a href="find-recycler.html" class="sidebar-link">
+                    <span>⌖</span>
+                    Find Recycler
+                </a>
+
+
+                <a href="history.html" class="sidebar-link">
+                    <span>◷</span>
+                    Recycling History
+                </a>
+
+
+                <a href="badges.html" class="sidebar-link">
+                    <span>♕</span>
+                    My Badges
+                </a>
+
+
+                <a href="#" class="sidebar-link">
+                    <span>♙</span>
+                    Profile
+                </a>
+
+            </nav>
+
+
+            <!-- LOGOUT -->
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutButton"
+            >
+                ⇥ &nbsp; Log out
+            </button>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <section class="add-ewaste-content">
+
+
+            <!-- DATE -->
+            <p class="dashboard-date">
+                Saturday, 19 September 2026
+            </p>
+
+
+            <!-- TITLE -->
+            <h1 class="add-ewaste-title">
+                Add E-Waste
+            </h1>
+
+
+            <!-- ================= FORM CARD ================= -->
+            <div class="ewaste-form-card">
+
+                <h2>
+                    Device Details
+                </h2>
+
+
+                <form id="ewasteForm">
+
+
+                    <!-- ================= FORM GRID ================= -->
+                    <div class="ewaste-form-grid">
+
+
+                        <!-- DEVICE CATEGORY -->
+                        <div class="ewaste-form-group">
+
+                            <label for="deviceCategory">
+                                Device Category<span>*</span>
+                            </label>
+
+                            <select
+                                id="deviceCategory"
+                                name="deviceCategory"
+                                required
+                            >
+
+                                <option value="">
+                                    Select a device
+                                </option>
+
+                                <option value="Laptop">
+                                    Laptop
+                                </option>
+
+                                <option value="Phone">
+                                    Phone
+                                </option>
+
+                                <option value="Tablet">
+                                    Tablet
+                                </option>
+
+                                <option value="Monitor">
+                                    Monitor
+                                </option>
+
+                                <option value="Accessory">
+                                    Accessory
+                                </option>
+
+                                <option value="Other Electronics">
+                                    Other Electronics
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <!-- BRAND -->
+                        <div class="ewaste-form-group">
+
+                            <label for="deviceBrand">
+                                Brand<span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="deviceBrand"
+                                name="deviceBrand"
+                                placeholder="Enter brand"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- MODEL -->
+                        <div class="ewaste-form-group">
+
+                            <label for="deviceModel">
+                                Model<span>*</span>
+                            </label>
+
+                            <input
+                                type="text"
+                                id="deviceModel"
+                                name="deviceModel"
+                                placeholder="Enter model"
+                                required
+                            >
+
+                        </div>
+
+
+                        <!-- CONDITION -->
+                        <div class="ewaste-form-group">
+
+                            <label for="deviceCondition">
+                                Condition<span>*</span>
+                            </label>
+
+                            <select
+                                id="deviceCondition"
+                                name="deviceCondition"
+                                required
+                            >
+
+                                <option value="">
+                                    Select condition
+                                </option>
+
+                                <option value="Working (Good)">
+                                    Working (Good)
+                                </option>
+
+                                <option value="Working (Damaged)">
+                                    Working (Damaged)
+                                </option>
+
+                                <option value="Not Working">
+                                    Not Working
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ================= ACCEPTED DEVICES ================= -->
+                    <aside class="accepted-devices">
+
+                        <h3>
+                            Accepted Devices:
+                        </h3>
+
+                        <ol>
+                            <li>Laptops</li>
+                            <li>Phones</li>
+                            <li>Tablets</li>
+                            <li>Monitors</li>
+                            <li>Accessories</li>
+                            <li>Other Electronics</li>
+                        </ol>
+
+                    </aside>
+
+
+                    <!-- ================= NOTES ================= -->
+                    <div class="notes-group">
+
+                        <label for="deviceNotes">
+                            Additional notes (Optional)
+                        </label>
+
+                        <textarea
+                            id="deviceNotes"
+                            name="deviceNotes"
+                            placeholder="Eg. Charger included, minor scratches etc."
+                        ></textarea>
+
+                    </div>
+
+
+                    <!-- ================= IMAGE UPLOAD ================= -->
+                    <div class="upload-section">
+
+                        <label class="upload-title">
+                            Upload Device Image<span>*</span>
+                        </label>
+
+
+                        <label
+                            for="deviceImage"
+                            class="image-upload-box"
+                            id="imageUploadBox"
+                        >
+
+                            <!-- Default Upload Content -->
+                            <div
+                                class="upload-placeholder"
+                                id="uploadPlaceholder"
+                            >
+
+                                <div class="camera-icon">
+                                    📷
+                                </div>
+
+                                <p>
+                                    Click to upload or drag and drop
+                                </p>
+
+                                <small>
+                                    PNG, JPG (Max 5MB)
+                                </small>
+
+                            </div>
+
+
+                            <!-- Image Preview -->
+                            <img
+                                id="imagePreview"
+                                class="image-preview"
+                                alt="Device Preview"
+                            >
+
+
+                            <input
+                                type="file"
+                                id="deviceImage"
+                                name="deviceImage"
+                                accept=".jpg,.jpeg,.png,image/jpeg,image/png"
+                                required
+                            >
+
+                        </label>
+
+                    </div>
+
+
+                    <!-- ================= MESSAGE ================= -->
+                    <p
+                        class="form-message"
+                        id="ewasteMessage"
+                    ></p>
+
+
+                    <!-- ================= SUBMIT ================= -->
+                    <button
+                        type="submit"
+                        class="submit-device-button"
+                    >
+                        Submit Device →
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

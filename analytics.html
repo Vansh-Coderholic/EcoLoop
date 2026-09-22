@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Analytics | EcoLoop</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="analytics-page">
+
+    <!-- ================= HEADER ================= -->
+    <header class="dashboard-header">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-image-box">
+                <img src="logo.png" alt="EcoLoop Logo">
+            </div>
+
+            <div class="logo-brand-name">
+                Eco<span>Loop</span>
+            </div>
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= PAGE LAYOUT ================= -->
+    <main class="recycler-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="recycler-sidebar">
+
+            <!-- Profile -->
+            <div class="sidebar-profile">
+
+                <div class="profile-circle">
+                    GC
+                </div>
+
+                <div class="profile-info">
+                    <h4>GreenCycle Center</h4>
+                    <p>Recycler account</p>
+                </div>
+
+            </div>
+
+
+            <!-- Navigation -->
+            <nav class="sidebar-menu">
+
+                <a href="recycler.html" class="sidebar-link">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+
+                <a href="requests.html" class="sidebar-link">
+
+                    <span>▣</span>
+
+                    Requests
+
+                    <span class="request-count">
+                        6
+                    </span>
+
+                </a>
+
+
+                <a href="analytics.html" class="sidebar-link active">
+                    <span>▥</span>
+                    Analytics
+                </a>
+
+
+                <a href="#" class="sidebar-link">
+                    <span>⌂</span>
+                    Center profile
+                </a>
+
+            </nav>
+
+
+            <!-- Logout -->
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutButton"
+            >
+                ⇥ &nbsp; Log out
+            </button>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <section class="analytics-content">
+
+
+            <!-- PAGE INTRO -->
+            <div class="analytics-intro">
+
+                <p>
+                    How much your center has collected
+                </p>
+
+                <h1>
+                    Analytics
+                </h1>
+
+            </div>
+
+
+            <!-- ================= STAT CARDS ================= -->
+            <div class="analytics-stats">
+
+
+                <!-- TOTAL E-WASTE -->
+                <div class="analytics-card analytics-green-card">
+
+                    <p>
+                        Total e-waste collected
+                    </p>
+
+                    <h2>
+                        3,420 kg
+                    </h2>
+
+                    <small>
+                        All time
+                    </small>
+
+                </div>
+
+
+                <!-- DEVICES THIS MONTH -->
+                <div class="analytics-card">
+
+                    <p>
+                        Devices this month
+                    </p>
+
+                    <h2>
+                        138
+                    </h2>
+
+                    <small class="green-text">
+                        On track for 210
+                    </small>
+
+                </div>
+
+
+                <!-- AVERAGE -->
+                <div class="analytics-card">
+
+                    <p>
+                        Average per device
+                    </p>
+
+                    <h2>
+                        2.7 kg
+                    </h2>
+
+                    <small class="green-text">
+                        Up from 2.5 kg
+                    </small>
+
+                </div>
+
+
+                <!-- TOP CATEGORY -->
+                <div class="analytics-card analytics-category-card">
+
+                    <p>
+                        Top category
+                    </p>
+
+                    <h3>
+                        Phones &amp; tablets
+                    </h3>
+
+                    <small class="green-text">
+                        437 devices
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= CHARTS ================= -->
+            <div class="analytics-charts">
+
+
+                <!-- ================= DEVICE DISTRIBUTION ================= -->
+                <div class="chart-card distribution-card">
+
+                    <h2>
+                        Device category distribution
+                    </h2>
+
+
+                    <!-- DONUT CHART -->
+                    <div class="donut-container">
+
+                        <div class="donut-chart">
+
+                            <div class="donut-center">
+
+                                <strong>
+                                    1,284
+                                </strong>
+
+                                <span>
+                                    devices
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CHART LEGEND -->
+                    <div class="chart-legend">
+
+
+                        <div class="legend-row">
+
+                            <div class="legend-name">
+
+                                <span class="legend-color phones-color"></span>
+
+                                Phones &amp; tablets
+
+                            </div>
+
+                            <span>437</span>
+
+                            <strong>34%</strong>
+
+                        </div>
+
+
+                        <div class="legend-row">
+
+                            <div class="legend-name">
+
+                                <span class="legend-color laptops-color"></span>
+
+                                Laptops
+
+                            </div>
+
+                            <span>308</span>
+
+                            <strong>24%</strong>
+
+                        </div>
+
+
+                        <div class="legend-row">
+
+                            <div class="legend-name">
+
+                                <span class="legend-color batteries-color"></span>
+
+                                Batteries
+
+                            </div>
+
+                            <span>193</span>
+
+                            <strong>15%</strong>
+
+                        </div>
+
+
+                        <div class="legend-row">
+
+                            <div class="legend-name">
+
+                                <span class="legend-color monitors-color"></span>
+
+                                TVs &amp; monitors
+
+                            </div>
+
+                            <span>154</span>
+
+                            <strong>12%</strong>
+
+                        </div>
+
+
+                        <div class="legend-row">
+
+                            <div class="legend-name">
+
+                                <span class="legend-color chargers-color"></span>
+
+                                Chargers &amp; cables
+
+                            </div>
+
+                            <span>116</span>
+
+                            <strong>9%</strong>
+
+                        </div>
+
+
+                        <div class="legend-row">
+
+                            <div class="legend-name">
+
+                                <span class="legend-color other-color"></span>
+
+                                Other
+
+                            </div>
+
+                            <span>76</span>
+
+                            <strong>6%</strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- ================= MONTHLY COLLECTION ================= -->
+                <div class="chart-card monthly-card">
+
+
+                    <!-- Chart Header -->
+                    <div class="chart-heading">
+
+                        <h2>
+                            Monthly collection
+                        </h2>
+
+
+                        <!-- Chart Toggle -->
+                        <div class="chart-toggle">
+
+                            <button
+                                type="button"
+                                class="chart-toggle-button active"
+                                data-chart="devices"
+                            >
+                                Devices
+                            </button>
+
+                            <button
+                                type="button"
+                                class="chart-toggle-button"
+                                data-chart="weight"
+                            >
+                                Weight (kg)
+                            </button>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- BAR CHART -->
+                    <div class="bar-chart" id="monthlyChart">
+
+
+                        <!-- APR -->
+                        <div class="bar-item">
+
+                            <div class="bar-value">
+                                148
+                            </div>
+
+                            <div
+                                class="bar"
+                                data-devices="148"
+                                data-weight="390"
+                                style="--bar-height: 148px;"
+                            ></div>
+
+                            <span>
+                                Apr
+                            </span>
+
+                        </div>
+
+
+                        <!-- MAY -->
+                        <div class="bar-item">
+
+                            <div class="bar-value">
+                                172
+                            </div>
+
+                            <div
+                                class="bar"
+                                data-devices="172"
+                                data-weight="440"
+                                style="--bar-height: 172px;"
+                            ></div>
+
+                            <span>
+                                May
+                            </span>
+
+                        </div>
+
+
+                        <!-- JUN -->
+                        <div class="bar-item">
+
+                            <div class="bar-value">
+                                165
+                            </div>
+
+                            <div
+                                class="bar"
+                                data-devices="165"
+                                data-weight="420"
+                                style="--bar-height: 165px;"
+                            ></div>
+
+                            <span>
+                                Jun
+                            </span>
+
+                        </div>
+
+
+                        <!-- JUL -->
+                        <div class="bar-item">
+
+                            <div class="bar-value">
+                                201
+                            </div>
+
+                            <div
+                                class="bar"
+                                data-devices="201"
+                                data-weight="515"
+                                style="--bar-height: 201px;"
+                            ></div>
+
+                            <span>
+                                Jul
+                            </span>
+
+                        </div>
+
+
+                        <!-- AUG -->
+                        <div class="bar-item">
+
+                            <div class="bar-value">
+                                226
+                            </div>
+
+                            <div
+                                class="bar"
+                                data-devices="226"
+                                data-weight="580"
+                                style="--bar-height: 226px;"
+                            ></div>
+
+                            <span>
+                                Aug
+                            </span>
+
+                        </div>
+
+
+                        <!-- SEP -->
+                        <div class="bar-item">
+
+                            <div class="bar-value">
+                                138
+                            </div>
+
+                            <div
+                                class="bar current-month"
+                                data-devices="138"
+                                data-weight="375"
+                                style="--bar-height: 138px;"
+                            ></div>
+
+                            <span>
+                                Sep
+                            </span>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Chart Note -->
+                    <p class="chart-note">
+                        September is still in progress (to the 19th).
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

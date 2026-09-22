@@ -1,0 +1,2243 @@
+/* =========================================================
+   ECOLOOP - SHARED STYLESHEET
+   styles.css
+========================================================= */
+
+
+/* =========================================================
+   1. GLOBAL
+========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #17352c;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+small {
+    display: block;
+}
+
+
+/* =========================================================
+   2. COMMON COLORS / UTILITIES
+========================================================= */
+
+.green-text {
+    color: #087158;
+}
+
+.status {
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 11px;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.status.pending {
+    color: #a96b00;
+    background: #fff0c8;
+}
+
+.status.scheduled {
+    color: #2d63c8;
+    background: #dce9ff;
+}
+
+.status.recycled {
+    color: #087158;
+    background: #ccefdc;
+}
+
+
+/* =========================================================
+   3. LOGO
+========================================================= */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    flex-shrink: 0;
+}
+
+.logo-image-box {
+    width: 72px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
+}
+
+.logo-image-box img {
+    width: 66px;
+    height: 66px;
+    display: block;
+    object-fit: contain;
+}
+
+.logo-brand-name {
+    font-size: 32px;
+    font-weight: 800;
+    color: #087158;
+    white-space: nowrap;
+}
+
+.logo-brand-name span {
+    color: #39b96b;
+}
+
+
+/* =========================================================
+   4. LANDING PAGE
+========================================================= */
+
+.navbar {
+    width: 100%;
+    height: 95px;
+    min-height: 95px;
+    padding: 10px 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background: #9ce3ba;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    min-width: 105px;
+    padding: 12px 18px;
+
+    text-align: center;
+
+    color: #ffffff;
+    background: #006b54;
+
+    border-radius: 25px;
+
+    font-size: 12px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+.nav-links a:hover {
+    background: #005441;
+    transform: translateY(-2px);
+}
+
+
+/* HERO */
+
+.hero {
+    min-height: 430px;
+    padding: 30px 55px 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #edf8ef;
+}
+
+.hero-left {
+    width: 62%;
+}
+
+.cleaner-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+    padding: 6px 10px;
+
+    background: #b6edc7;
+    color: #087158;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.hero-left h1 {
+    margin-bottom: 12px;
+
+    color: #000000;
+
+    font-size: 47px;
+    line-height: 1.28;
+    font-weight: 800;
+}
+
+.hero-left h1 span {
+    color: #287f41;
+}
+
+.hero-left p {
+    margin-bottom: 18px;
+
+    color: #555555;
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 18px;
+}
+
+.recycle-btn,
+.learn-btn {
+    padding: 13px 18px;
+
+    border-radius: 7px;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    transition: 0.2s ease;
+}
+
+.recycle-btn {
+    color: #ffffff;
+    background: #087159;
+}
+
+.recycle-btn:hover {
+    background: #055744;
+}
+
+.learn-btn {
+    min-width: 140px;
+
+    text-align: center;
+
+    color: #087159;
+    background: #ffffff;
+
+    border: 1px solid #78bfa8;
+}
+
+.learn-btn:hover {
+    background: #e5f6eb;
+}
+
+
+/* HERO ILLUSTRATION */
+
+.hero-right {
+    width: 38%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.illustration-circle {
+    position: relative;
+
+    width: 260px;
+    height: 260px;
+
+    background: #a9e8bd;
+
+    border: 20px solid #36b75c;
+    border-radius: 50%;
+}
+
+.laptop-icon {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    font-size: 65px;
+}
+
+.phone-icon {
+    position: absolute;
+    bottom: 25px;
+    left: 30px;
+
+    font-size: 55px;
+}
+
+.recycle-icon {
+    position: absolute;
+    right: 22px;
+    bottom: 25px;
+
+    color: #24c53e;
+
+    font-size: 75px;
+}
+
+
+/* LANDING STEPS */
+
+.steps-section {
+    min-height: 120px;
+    padding: 15px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    background: #ffffff;
+}
+
+.step {
+    width: 190px;
+    text-align: center;
+}
+
+.number {
+    width: 58px;
+    height: 58px;
+
+    margin: 0 auto 7px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #ffffff;
+    background: #007158;
+
+    border-radius: 50%;
+
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.step h3 {
+    color: #007158;
+
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+.step-arrow {
+    width: 110px;
+}
+
+.arrow-line {
+    position: relative;
+
+    width: 100%;
+    height: 3px;
+
+    background: #007158;
+}
+
+.arrow-line::after {
+    content: "";
+
+    position: absolute;
+    right: 0;
+    top: -6px;
+
+    width: 12px;
+    height: 12px;
+
+    border-top: 3px solid #007158;
+    border-right: 3px solid #007158;
+
+    transform: rotate(45deg);
+}
+
+
+/* =========================================================
+   5. LOGIN / REGISTER COMMON
+========================================================= */
+
+.login-page,
+.register-page {
+    min-height: 100vh;
+    background: #ffffff;
+}
+
+.login-header,
+.register-header {
+    height: 90px;
+    padding: 0 10px;
+
+    display: flex;
+    align-items: center;
+
+    background: #9ce3ba;
+}
+
+.login-container,
+.register-container {
+    min-height: calc(100vh - 90px);
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+
+    padding: 45px 20px;
+
+    background: #ffffff;
+}
+
+.login-card,
+.register-card {
+    width: 310px;
+
+    padding: 24px 28px 12px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border: 2px solid #222222;
+    border-radius: 30px;
+}
+
+.login-card h1,
+.register-card h1 {
+    margin-bottom: 8px;
+
+    color: #007158;
+
+    font-size: 28px;
+}
+
+.login-card h3,
+.register-card h3 {
+    margin-bottom: 20px;
+
+    color: #007158;
+
+    font-size: 14px;
+}
+
+.login-card h3 span,
+.register-card h3 span {
+    color: #39b869;
+}
+
+
+/* FORMS */
+
+.form-group {
+    margin-bottom: 13px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #222222;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.form-group input {
+    width: 100%;
+    height: 35px;
+
+    padding: 0 10px;
+
+    background: #ffffff;
+
+    border: 1px solid #888888;
+    outline: none;
+
+    font-size: 12px;
+}
+
+.form-group input:focus {
+    border-color: #007158;
+}
+
+.login-button,
+.register-button {
+    width: 100%;
+    height: 36px;
+
+    margin-top: 2px;
+
+    color: #ffffff;
+    background: #007158;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.login-button:hover,
+.register-button:hover {
+    background: #005b47;
+}
+
+
+/* ACCOUNT TYPE */
+
+.account-type {
+    margin: 3px 5px 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+
+    color: #555555;
+
+    font-size: 11px;
+}
+
+.account-type > span {
+    margin-right: 5px;
+}
+
+.account-type label {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+
+/* OR */
+
+.or-section {
+    margin: 7px 0 2px;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.or-line {
+    height: 1px;
+    flex: 1;
+    background: #777777;
+}
+
+.or-section span {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+/* GOOGLE */
+
+.google-button {
+    width: 100%;
+    height: 35px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    color: #222222;
+    background: #ffffff;
+
+    border: 1px solid #777777;
+    border-radius: 5px;
+
+    font-size: 13px;
+}
+
+.google-button:hover {
+    background: #f5f5f5;
+}
+
+.google-g {
+    color: #4285f4;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.signup-text,
+.login-text {
+    margin-top: 11px;
+
+    color: #222222;
+
+    font-size: 12px;
+}
+
+.signup-text a,
+.login-text a {
+    color: #287ba3;
+    text-decoration: underline;
+}
+
+
+/* =========================================================
+   6. DASHBOARD HEADER
+========================================================= */
+
+.dashboard-header {
+    width: 100%;
+    height: 90px;
+    padding: 8px 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #9ce3ba;
+}
+
+.dashboard-header .logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.dashboard-header .logo-image-box {
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dashboard-header .logo-image-box img {
+    width: 66px;
+    height: 66px;
+    object-fit: contain;
+}
+
+.dashboard-header .logo-brand-name {
+    font-size: 32px;
+    font-weight: 800;
+    color: #087158;
+}
+
+.dashboard-header .logo-brand-name span {
+    color: #39b96b;
+}
+
+.dashboard-top-nav {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.top-nav-button {
+    padding: 13px 22px;
+
+    color: white;
+    background: #006b54;
+
+    border-radius: 28px;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   7. USER / RECYCLER DASHBOARD LAYOUT
+========================================================= */
+
+.user-layout,
+.recycler-layout {
+    width: calc(100% - 60px);
+    min-height: calc(100vh - 115px);
+
+    margin: 15px auto;
+
+    display: flex;
+
+    overflow: hidden;
+
+    background: #f7fbf7;
+
+    border: 1px solid #dce9df;
+    border-radius: 20px;
+}
+
+
+/* SIDEBARS */
+
+.user-sidebar,
+.recycler-sidebar {
+    width: 180px;
+    min-width: 180px;
+    min-height: calc(100vh - 115px);
+
+    padding: 18px 12px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: #ffffff;
+    background: #006b54;
+}
+
+
+/* PROFILE */
+
+.sidebar-profile {
+    margin-bottom: 15px;
+    padding: 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    background: rgba(255, 255, 255, 0.12);
+
+    border-radius: 10px;
+}
+
+.profile-circle {
+    width: 30px;
+    height: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    color: #087158;
+    background: #d9f4e3;
+
+    border-radius: 50%;
+
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.profile-info h4 {
+    font-size: 10px;
+}
+
+.profile-info p {
+    margin-top: 2px;
+
+    color: #bce1d4;
+
+    font-size: 8px;
+}
+
+
+/* SIDEBAR MENU */
+
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.sidebar-link {
+    position: relative;
+
+    padding: 10px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    color: #ffffff;
+
+    border-radius: 8px;
+
+    font-size: 11px;
+
+    transition: 0.2s;
+}
+
+.sidebar-link:hover,
+.sidebar-link.active {
+    background: rgba(255, 255, 255, 0.16);
+}
+
+.sidebar-link > span:first-child {
+    width: 15px;
+
+    text-align: center;
+
+    font-size: 16px;
+}
+
+.request-count {
+    margin-left: auto;
+
+    min-width: 17px;
+    height: 17px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: #775b00;
+    background: #ffd85e;
+
+    border-radius: 50%;
+
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.logout-button {
+    margin-top: auto;
+    padding: 10px;
+
+    text-align: left;
+
+    color: #ffffff;
+    background: transparent;
+
+    border: none;
+
+    font-size: 11px;
+}
+
+
+/* =========================================================
+   8. COMMON DASHBOARD CONTENT
+========================================================= */
+
+.user-content,
+.recycler-content,
+.requests-content,
+.analytics-content,
+.add-ewaste-content,
+.find-recycler-content {
+    flex: 1;
+
+    min-width: 0;
+
+    padding: 22px;
+
+    background: #f7fbf7;
+}
+
+.dashboard-date,
+.requests-intro p,
+.analytics-intro p {
+    margin-bottom: 5px;
+
+    color: #7b8b84;
+
+    font-size: 10px;
+}
+
+.user-dashboard-title,
+.dashboard-title-row h1,
+.requests-intro h1,
+.analytics-intro h1,
+.add-ewaste-title,
+.find-recycler-title {
+    margin-bottom: 15px;
+
+    color: #17352c;
+
+    font-size: 23px;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   9. USER DASHBOARD
+========================================================= */
+
+.user-stats {
+    margin-bottom: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.user-stat-card {
+    min-height: 90px;
+    padding: 14px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.user-stat-card p {
+    margin-bottom: 6px;
+
+    color: #6f7f79;
+
+    font-size: 10px;
+}
+
+.user-stat-card h2 {
+    margin-bottom: 7px;
+
+    color: #17352c;
+
+    font-size: 23px;
+}
+
+.user-stat-card small {
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.ecopoints-card,
+.impact-card {
+    color: #ffffff;
+    background: #007158;
+}
+
+.ecopoints-card p,
+.ecopoints-card h2,
+.ecopoints-card small,
+.impact-card p,
+.impact-card h2,
+.impact-card small {
+    color: #ffffff;
+}
+
+.devices-card {
+    background: #c8dafa;
+}
+
+.badge-card h2 {
+    font-size: 21px;
+}
+
+
+/* RECENT RECYCLING */
+
+.recent-recycling-card,
+.requests-card,
+.requests-table-card,
+.chart-card,
+.ewaste-form-card {
+    padding: 15px;
+
+    background: #ffffff;
+
+    border-radius: 13px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.recent-heading,
+.requests-heading {
+    margin-bottom: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recent-heading h2,
+.requests-heading h2 {
+    font-size: 15px;
+}
+
+.recent-heading a,
+.view-requests-button {
+    color: #087158;
+    background: transparent;
+
+    border: none;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+
+/* =========================================================
+   10. TABLES
+========================================================= */
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.recycling-table,
+.request-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    font-size: 9px;
+}
+
+.recycling-table th,
+.request-table th {
+    padding: 8px 5px;
+
+    text-align: left;
+
+    color: #7a8983;
+
+    border-bottom: 1px solid #e4ebe6;
+
+    font-size: 8px;
+}
+
+.recycling-table td,
+.request-table td {
+    padding: 9px 5px;
+
+    color: #34483f;
+
+    border-bottom: 1px solid #e6ece8;
+
+    vertical-align: middle;
+}
+
+.recycling-table td small,
+.request-table td small {
+    margin-top: 2px;
+
+    color: #87948f;
+
+    font-size: 7px;
+}
+
+.device-info {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.device-info strong {
+    display: block;
+
+    font-size: 9px;
+}
+
+.device-icon {
+    width: 27px;
+    height: 27px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-shrink: 0;
+
+    color: #087158;
+    background: #dff4e7;
+
+    border-radius: 6px;
+
+    font-size: 14px;
+}
+
+
+/* =========================================================
+   11. RECYCLER DASHBOARD
+========================================================= */
+
+.recycler-stats,
+.analytics-stats {
+    margin-bottom: 15px;
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.stat-card,
+.analytics-card {
+    min-height: 90px;
+    padding: 14px;
+
+    background: #ffffff;
+
+    border-radius: 12px;
+
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.04);
+}
+
+.stat-card p,
+.analytics-card p {
+    margin-bottom: 6px;
+
+    color: #70817a;
+
+    font-size: 9px;
+}
+
+.stat-card h2,
+.analytics-card h2 {
+    margin-bottom: 7px;
+
+    color: #17352c;
+
+    font-size: 23px;
+}
+
+.stat-card h3,
+.analytics-card h3 {
+    margin-bottom: 8px;
+
+    font-size: 16px;
+}
+
+.stat-card small,
+.analytics-card small {
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.stat-card-green,
+.analytics-green-card {
+    color: #ffffff;
+    background: #007158;
+}
+
+.stat-card-green p,
+.stat-card-green h2,
+.stat-card-green small,
+.analytics-green-card p,
+.analytics-green-card h2,
+.analytics-green-card small {
+    color: #ffffff;
+}
+
+.stat-card-yellow {
+    background: #fff0bd;
+}
+
+.stat-card-cream,
+.analytics-category-card {
+    background: #f7efd8;
+}
+
+
+/* BUTTONS IN TABLE */
+
+.schedule-button,
+.confirm-button {
+    min-width: 78px;
+    padding: 7px 9px;
+
+    border-radius: 7px;
+
+    font-size: 9px;
+    font-weight: 600;
+}
+
+.schedule-button {
+    color: #007158;
+    background: #ffffff;
+
+    border: 1px solid #007158;
+}
+
+.schedule-button:hover {
+    background: #e9f8ef;
+}
+
+.confirm-button {
+    color: #ffffff;
+    background: #007158;
+
+    border: 1px solid #007158;
+}
+
+.confirm-button:hover {
+    background: #005c48;
+}
+
+.completed-text {
+    color: #65746e;
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   12. REQUESTS PAGE
+========================================================= */
+
+.request-controls {
+    margin-bottom: 12px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.request-filters {
+    display: flex;
+    gap: 8px;
+}
+
+.filter-button {
+    padding: 8px 12px;
+
+    color: #65766f;
+    background: #ffffff;
+
+    border: 1px solid #d9e5dd;
+    border-radius: 20px;
+
+    font-size: 9px;
+}
+
+.filter-button span {
+    margin-left: 3px;
+}
+
+.filter-button.active {
+    color: #ffffff;
+    background: #007158;
+    border-color: #007158;
+}
+
+.request-search input {
+    width: 190px;
+    height: 32px;
+
+    padding: 0 15px;
+
+    outline: none;
+
+    border: 1px solid #d7e4dc;
+    border-radius: 20px;
+
+    font-size: 9px;
+}
+
+.requests-table-footer {
+    padding-top: 9px;
+
+    display: flex;
+    justify-content: space-between;
+
+    color: #85928d;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   13. ANALYTICS
+========================================================= */
+
+.analytics-charts {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 12px;
+}
+
+.chart-card {
+    min-height: 330px;
+}
+
+.chart-card h2 {
+    font-size: 14px;
+}
+
+
+/* DONUT */
+
+.donut-container {
+    padding: 10px 0 8px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.donut-chart {
+    width: 150px;
+    height: 150px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background:
+        conic-gradient(
+            #087158 0 34%,
+            #3bb45d 34% 58%,
+            #86d19d 58% 73%,
+            #e9b94b 73% 85%,
+            #477da5 85% 94%,
+            #aebdb5 94% 100%
+        );
+}
+
+.donut-center {
+    width: 85px;
+    height: 85px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: #ffffff;
+
+    border-radius: 50%;
+}
+
+.donut-center strong {
+    font-size: 20px;
+}
+
+.donut-center span {
+    margin-top: 3px;
+
+    color: #7d8c86;
+
+    font-size: 8px;
+}
+
+
+/* LEGEND */
+
+.chart-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+.legend-row {
+    display: grid;
+    grid-template-columns: 1fr 35px 30px;
+    align-items: center;
+
+    font-size: 8px;
+}
+
+.legend-name {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.legend-color {
+    width: 8px;
+    height: 8px;
+
+    display: inline-block;
+
+    border-radius: 2px;
+}
+
+.phones-color {
+    background: #087158;
+}
+
+.laptops-color {
+    background: #3bb45d;
+}
+
+.batteries-color {
+    background: #86d19d;
+}
+
+.monitors-color {
+    background: #e9b94b;
+}
+
+.chargers-color {
+    background: #477da5;
+}
+
+.other-color {
+    background: #aebdb5;
+}
+
+
+/* BAR CHART */
+
+.chart-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chart-toggle {
+    padding: 2px;
+
+    display: flex;
+
+    background: #f2f7f3;
+
+    border: 1px solid #dce9df;
+    border-radius: 9px;
+}
+
+.chart-toggle-button {
+    padding: 6px 11px;
+
+    color: #62736c;
+    background: transparent;
+
+    border: none;
+    border-radius: 7px;
+
+    font-size: 8px;
+}
+
+.chart-toggle-button.active {
+    color: #17352c;
+    background: #ffffff;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+}
+
+.bar-chart {
+    height: 235px;
+
+    padding: 25px 5px 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    gap: 8px;
+}
+
+.bar-item {
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+
+    flex: 1;
+}
+
+.bar-value {
+    margin-bottom: 5px;
+
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.bar {
+    width: 32px;
+
+    height: min(var(--bar-height), 170px);
+
+    background: #3caf5b;
+
+    border-radius: 7px 7px 0 0;
+
+    transition: height 0.3s ease;
+}
+
+.bar.current-month {
+    background: #8ed0a5;
+}
+
+.bar-item > span {
+    margin-top: 7px;
+
+    color: #71817a;
+
+    font-size: 8px;
+}
+
+.chart-note {
+    margin-top: 8px;
+
+    color: #84918c;
+
+    font-size: 8px;
+}
+
+
+/* =========================================================
+   14. ADD E-WASTE
+========================================================= */
+
+.ewaste-form-card {
+    position: relative;
+
+    max-width: 760px;
+}
+
+.ewaste-form-card > h2 {
+    margin-bottom: 15px;
+
+    font-size: 15px;
+}
+
+.ewaste-form-card form {
+    position: relative;
+}
+
+.ewaste-form-grid {
+    width: calc(100% - 190px);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px 70px;
+}
+
+.ewaste-form-group label,
+.notes-group label,
+.upload-title {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #263b33;
+
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.ewaste-form-group label span,
+.upload-title span {
+    color: #c14444;
+}
+
+.ewaste-form-group input,
+.ewaste-form-group select {
+    width: 100%;
+    height: 31px;
+
+    padding: 0 8px;
+
+    background: #ffffff;
+
+    border: 1px solid #777777;
+    border-radius: 2px;
+
+    outline: none;
+
+    font-size: 10px;
+}
+
+.ewaste-form-group input:focus,
+.ewaste-form-group select:focus,
+.notes-group textarea:focus {
+    border-color: #007158;
+}
+
+.accepted-devices {
+    position: absolute;
+
+    top: 85px;
+    right: 15px;
+
+    width: 160px;
+
+    padding: 18px 15px;
+
+    color: #087158;
+    background: #bcefcf;
+
+    border-radius: 10px;
+}
+
+.accepted-devices h3 {
+    margin-bottom: 5px;
+
+    font-size: 13px;
+}
+
+.accepted-devices ol {
+    padding-left: 17px;
+
+    font-size: 12px;
+    line-height: 1.55;
+    font-weight: 600;
+}
+
+.notes-group {
+    width: calc(100% - 190px);
+    margin-top: 25px;
+}
+
+.notes-group textarea {
+    width: 100%;
+    height: 60px;
+
+    padding: 8px;
+
+    resize: vertical;
+
+    outline: none;
+
+    border: 1px solid #777777;
+
+    font-size: 10px;
+}
+
+.upload-section {
+    width: calc(100% - 190px);
+    margin-top: 25px;
+}
+
+.image-upload-box {
+    width: 100%;
+    min-height: 105px;
+
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+
+    text-align: center;
+
+    background: #e1e5e2;
+
+    border: 1px solid #666666;
+
+    cursor: pointer;
+}
+
+.image-upload-box input[type="file"] {
+    display: none;
+}
+
+.camera-icon {
+    margin-bottom: 4px;
+
+    font-size: 45px;
+}
+
+.upload-placeholder p {
+    color: #69766f;
+    font-size: 9px;
+}
+
+.upload-placeholder small {
+    color: #7b8882;
+    font-size: 8px;
+}
+
+.image-preview {
+    max-width: 100%;
+    max-height: 180px;
+
+    display: none;
+
+    object-fit: contain;
+}
+
+.form-message {
+    width: calc(100% - 190px);
+
+    margin-top: 8px;
+
+    font-size: 10px;
+}
+
+.submit-device-button {
+    width: calc(100% - 190px);
+    height: 38px;
+
+    margin-top: 12px;
+
+    color: #ffffff;
+    background: #007158;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.submit-device-button:hover {
+    background: #005c48;
+}
+
+
+/* =========================================================
+   15. FIND RECYCLER
+========================================================= */
+
+.find-recycler-content {
+    max-width: none;
+}
+
+.recycler-map {
+    width: 480px;
+    max-width: 100%;
+    height: 230px;
+
+    margin-bottom: 12px;
+
+    overflow: hidden;
+
+    border-radius: 5px;
+}
+
+.map-placeholder {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            110deg,
+            #99d9f4 0 19%,
+            transparent 19%
+        ),
+        linear-gradient(
+            20deg,
+            transparent 0 58%,
+            #f5c14c 58% 60%,
+            transparent 60%
+        ),
+        #e6eee4;
+}
+
+.map-road {
+    position: absolute;
+
+    height: 5px;
+
+    background: #ffffff;
+
+    transform-origin: center;
+}
+
+.road-one {
+    width: 430px;
+
+    top: 90px;
+    left: 60px;
+
+    transform: rotate(-15deg);
+}
+
+.road-two {
+    width: 350px;
+
+    top: 140px;
+    left: 120px;
+
+    transform: rotate(22deg);
+}
+
+.road-three {
+    width: 260px;
+
+    top: 100px;
+    left: 210px;
+
+    transform: rotate(80deg);
+}
+
+.map-location {
+    position: absolute;
+
+    color: #00816a;
+
+    font-size: 24px;
+}
+
+.location-one {
+    top: 70px;
+    left: 205px;
+}
+
+.location-two {
+    top: 130px;
+    left: 150px;
+}
+
+.location-three {
+    top: 120px;
+    right: 130px;
+}
+
+.location-four {
+    bottom: 45px;
+    right: 180px;
+}
+
+.location-five {
+    top: 90px;
+    right: 45px;
+}
+
+.map-selected-center {
+    position: absolute;
+
+    top: 60px;
+    left: 155px;
+
+    padding: 7px 10px;
+
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    background: #ffffff;
+
+    border-radius: 6px;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+
+    font-size: 8px;
+}
+
+.map-selected-center strong {
+    display: block;
+}
+
+.map-selected-center small {
+    margin-top: 2px;
+
+    color: #7b8883;
+
+    font-size: 7px;
+}
+
+.map-area-name {
+    position: absolute;
+
+    color: #75827d;
+
+    font-size: 8px;
+}
+
+.andheri {
+    top: 125px;
+    left: 230px;
+}
+
+.juhu {
+    bottom: 25px;
+    left: 145px;
+}
+
+.jogeshwari {
+    top: 20px;
+    left: 230px;
+}
+
+
+/* RECYCLER LIST */
+
+.nearby-recyclers {
+    width: 425px;
+    max-width: 100%;
+}
+
+.nearby-recyclers > h2 {
+    margin-bottom: 5px;
+
+    font-size: 15px;
+}
+
+.recycler-item {
+    min-height: 55px;
+
+    padding: 8px 10px;
+
+    display: grid;
+    grid-template-columns: 1fr 60px 85px;
+    align-items: center;
+    gap: 8px;
+
+    background: #ffffff;
+
+    border: 1px solid #888888;
+    border-bottom: none;
+}
+
+.recycler-item:first-of-type {
+    border-radius: 12px 12px 0 0;
+}
+
+.recycler-item:last-child {
+    border-bottom: 1px solid #888888;
+    border-radius: 0 0 12px 12px;
+}
+
+.recycler-information h3 {
+    color: #182f27;
+    font-size: 10px;
+}
+
+.recycler-information p {
+    margin: 2px 0;
+
+    color: #5f7069;
+
+    font-size: 7px;
+}
+
+.recycler-information small {
+    color: #596a63;
+    font-size: 6px;
+}
+
+.recycler-distance {
+    color: #111111;
+
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.view-recycler-button {
+    padding: 8px 7px;
+
+    color: #087158;
+    background: #a8e7bf;
+
+    border: none;
+    border-radius: 4px;
+
+    font-size: 8px;
+    font-weight: 600;
+}
+
+.view-recycler-button:hover {
+    background: #8ed9aa;
+}
+
+
+/* MODAL */
+
+.recycler-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 1000;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+
+    background: rgba(0, 0, 0, 0.45);
+}
+
+.recycler-modal.show {
+    display: flex;
+}
+
+.recycler-modal-content {
+    position: relative;
+
+    width: 360px;
+    max-width: 100%;
+
+    padding: 25px;
+
+    background: #ffffff;
+
+    border-radius: 15px;
+
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+}
+
+.recycler-modal-content h2 {
+    margin-bottom: 10px;
+
+    color: #007158;
+}
+
+.recycler-modal-content p {
+    margin-bottom: 10px;
+
+    color: #52645d;
+
+    font-size: 12px;
+}
+
+.close-modal {
+    position: absolute;
+
+    top: 10px;
+    right: 13px;
+
+    background: transparent;
+
+    border: none;
+
+    font-size: 25px;
+}
+
+.select-recycler-button {
+    width: 100%;
+
+    margin-top: 10px;
+    padding: 11px;
+
+    color: #ffffff;
+    background: #007158;
+
+    border: none;
+    border-radius: 6px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   16. RESPONSIVE
+========================================================= */
+
+@media screen and (max-width: 1000px) {
+
+    .user-stats,
+    .recycler-stats,
+    .analytics-stats {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .analytics-charts {
+        grid-template-columns: 1fr;
+    }
+
+    .ewaste-form-grid {
+        gap: 20px;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+
+    /* LANDING */
+
+    .navbar {
+        height: auto;
+        min-height: 90px;
+        padding: 10px 15px;
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        min-width: auto;
+        padding: 9px 12px;
+    }
+
+    .hero {
+        padding: 35px 25px;
+
+        flex-direction: column;
+    }
+
+    .hero-left,
+    .hero-right {
+        width: 100%;
+    }
+
+    .hero-left {
+        text-align: center;
+    }
+
+    .hero-left h1 {
+        font-size: 38px;
+    }
+
+    .hero-buttons {
+        justify-content: center;
+    }
+
+    .hero-right {
+        margin-top: 35px;
+    }
+
+    .steps-section {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .step-arrow {
+        display: none;
+    }
+
+
+    /* DASHBOARD */
+
+    .user-layout,
+    .recycler-layout {
+        width: calc(100% - 20px);
+        flex-direction: column;
+    }
+
+    .user-sidebar,
+    .recycler-sidebar {
+        width: 100%;
+        min-height: auto;
+    }
+
+    .sidebar-menu {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .logout-button {
+        margin-top: 15px;
+    }
+
+
+    /* ADD E-WASTE */
+
+    .ewaste-form-grid,
+    .notes-group,
+    .upload-section,
+    .form-message,
+    .submit-device-button {
+        width: 100%;
+    }
+
+    .accepted-devices {
+        position: static;
+
+        width: 100%;
+
+        margin: 20px 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .logo-image-box {
+        width: 58px;
+        height: 58px;
+    }
+
+    .logo-image-box img {
+        width: 54px;
+        height: 54px;
+    }
+
+    .logo-brand-name {
+        font-size: 25px;
+    }
+
+    .dashboard-header {
+        padding: 12px;
+
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .dashboard-top-nav {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .user-content,
+    .recycler-content,
+    .requests-content,
+    .analytics-content,
+    .add-ewaste-content,
+    .find-recycler-content {
+        padding: 15px;
+    }
+
+    .user-stats,
+    .recycler-stats,
+    .analytics-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .request-controls {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .request-filters {
+        flex-wrap: wrap;
+    }
+
+    .request-search input {
+        width: 100%;
+    }
+
+    .requests-table-footer {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .ewaste-form-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .recycler-item {
+        grid-template-columns: 1fr auto;
+    }
+
+    .recycler-information {
+        grid-column: 1 / 3;
+    }
+
+    .bar {
+        width: 22px;
+    }
+
+    .login-card,
+    .register-card {
+        width: 100%;
+        max-width: 310px;
+    }
+}

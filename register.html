@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Register | EcoLoop</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="register-page">
+
+    <!-- ================= HEADER ================= -->
+    <header class="dashboard-header">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-image-box">
+                <img src="logo.png" alt="EcoLoop Logo">
+            </div>
+
+            <div class="logo-brand-name">
+                Eco<span>Loop</span>
+            </div>
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= REGISTRATION SECTION ================= -->
+    <main class="register-container">
+
+        <div class="register-card">
+
+            <h1>Create Account</h1>
+
+            <h3>
+                Join EcoLoop and start recycling responsibly
+            </h3>
+
+
+            <!-- REGISTRATION FORM -->
+            <form id="registerForm">
+
+                <!-- Full Name -->
+                <div class="form-group">
+
+                    <label for="fullName">
+                        Full Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="fullName"
+                        placeholder="Enter Full Name"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Email -->
+                <div class="form-group">
+
+                    <label for="registerEmail">
+                        Email Address
+                    </label>
+
+                    <input
+                        type="email"
+                        id="registerEmail"
+                        placeholder="Enter Email Address"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Password -->
+                <div class="form-group">
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="registerPassword"
+                        placeholder="Enter Password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Confirm Password -->
+                <div class="form-group">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <input
+                        type="password"
+                        id="confirmPassword"
+                        placeholder="Confirm Your Password"
+                        required
+                    >
+
+                </div>
+
+
+                <!-- Account Type -->
+                <div class="account-type">
+
+                    <span>Account Type</span>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="accountType"
+                            value="user"
+                            checked
+                        >
+                        User
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="accountType"
+                            value="recycler"
+                        >
+                        Recycler
+                    </label>
+
+                </div>
+
+
+                <!-- Register Button -->
+                <button type="submit" class="register-button">
+                    Register
+                </button>
+
+            </form>
+
+
+            <!-- OR -->
+            <div class="or-section">
+
+                <div class="or-line"></div>
+
+                <span>OR</span>
+
+                <div class="or-line"></div>
+
+            </div>
+
+
+            <!-- Google Button -->
+            <button type="button" class="google-button">
+
+                <span class="google-g">G</span>
+
+                Continue with Google
+
+            </button>
+
+
+            <!-- Login Link -->
+            <p class="login-text">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

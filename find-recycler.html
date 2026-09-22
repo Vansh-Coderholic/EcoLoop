@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find Recycler | EcoLoop</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="find-recycler-page">
+
+    <!-- ================= HEADER ================= -->
+    <header class="dashboard-header">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-image-box">
+                <img src="logo.png" alt="EcoLoop Logo">
+            </div>
+
+            <div class="logo-brand-name">
+                Eco<span>Loop</span>
+            </div>
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= PAGE LAYOUT ================= -->
+    <main class="user-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="user-sidebar">
+
+            <!-- USER PROFILE -->
+            <div class="sidebar-profile">
+
+                <div class="profile-circle">
+                    RC
+                </div>
+
+                <div class="profile-info">
+
+                    <h4 id="userName">
+                        Robert
+                    </h4>
+
+                    <p>
+                        User Account
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIDEBAR NAVIGATION -->
+            <nav class="sidebar-menu">
+
+                <a href="user.html" class="sidebar-link">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="add-ewaste.html" class="sidebar-link">
+                    <span>⊕</span>
+                    Add E-Waste
+                </a>
+
+                <a href="find-recycler.html" class="sidebar-link active">
+                    <span>⌖</span>
+                    Find Recycler
+                </a>
+
+                <a href="history.html" class="sidebar-link">
+                    <span>◷</span>
+                    Recycling History
+                </a>
+
+                <a href="badges.html" class="sidebar-link">
+                    <span>♕</span>
+                    My Badges
+                </a>
+
+                <a href="#" class="sidebar-link">
+                    <span>♙</span>
+                    Profile
+                </a>
+
+            </nav>
+
+
+            <!-- LOGOUT -->
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutButton"
+            >
+                ⇥ &nbsp; Log out
+            </button>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <section class="find-recycler-content">
+
+
+            <!-- DATE -->
+            <p class="dashboard-date">
+                Saturday, 19 September 2026
+            </p>
+
+
+            <!-- TITLE -->
+            <h1 class="find-recycler-title">
+                Find Recycler
+            </h1>
+
+
+            <!-- ================= MAP ================= -->
+            <div class="recycler-map">
+
+                <!--
+                    MID-SEM:
+                    Static map representation only.
+
+                    FINAL PROJECT:
+                    Replace this section with
+                    Leaflet + OpenStreetMap + Recycler API.
+                -->
+
+                <div class="map-placeholder">
+
+                    <div class="map-road road-one"></div>
+                    <div class="map-road road-two"></div>
+                    <div class="map-road road-three"></div>
+
+                    <span class="map-location location-one">
+                        ●
+                    </span>
+
+                    <span class="map-location location-two">
+                        ●
+                    </span>
+
+                    <span class="map-location location-three">
+                        ●
+                    </span>
+
+                    <span class="map-location location-four">
+                        ●
+                    </span>
+
+                    <span class="map-location location-five">
+                        ●
+                    </span>
+
+
+                    <!-- Selected Center -->
+                    <div class="map-selected-center">
+
+                        <span>
+                            📍
+                        </span>
+
+                        <div>
+                            <strong>
+                                GreenCycle Center
+                            </strong>
+
+                            <small>
+                                2.4 km - Andheri West
+                            </small>
+                        </div>
+
+                    </div>
+
+
+                    <div class="map-area-name andheri">
+                        Andheri West
+                    </div>
+
+                    <div class="map-area-name juhu">
+                        Juhu
+                    </div>
+
+                    <div class="map-area-name jogeshwari">
+                        Jogeshwari West
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= NEARBY CENTERS ================= -->
+            <div class="nearby-recyclers">
+
+                <h2>
+                    Nearby Recycling Center
+                </h2>
+
+
+                <!-- ================= CENTER 1 ================= -->
+                <div
+                    class="recycler-item"
+                    data-recycler="GreenCycle Center"
+                >
+
+                    <div class="recycler-information">
+
+                        <h3>
+                            GreenCycle Center
+                        </h3>
+
+                        <p>
+                            Andheri West, Mumbai
+                        </p>
+
+                        <small>
+                            Accepts: Laptops, Phones, Tablets, Monitors
+                        </small>
+
+                    </div>
+
+
+                    <div class="recycler-distance">
+                        2.4 km
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="view-recycler-button"
+                        data-recycler="GreenCycle Center"
+                        data-location="Andheri West, Mumbai"
+                        data-distance="2.4 km"
+                        data-accepts="Laptops, Phones, Tablets, Monitors"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+
+                <!-- ================= CENTER 2 ================= -->
+                <div
+                    class="recycler-item"
+                    data-recycler="EcoCenter"
+                >
+
+                    <div class="recycler-information">
+
+                        <h3>
+                            EcoCenter
+                        </h3>
+
+                        <p>
+                            Jogeshwari West, Mumbai
+                        </p>
+
+                        <small>
+                            Accepts: Laptops, Phones, Accessories,
+                            Other Electronics
+                        </small>
+
+                    </div>
+
+
+                    <div class="recycler-distance">
+                        4.1 km
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="view-recycler-button"
+                        data-recycler="EcoCenter"
+                        data-location="Jogeshwari West, Mumbai"
+                        data-distance="4.1 km"
+                        data-accepts="Laptops, Phones, Accessories, Other Electronics"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+
+                <!-- ================= CENTER 3 ================= -->
+                <div
+                    class="recycler-item"
+                    data-recycler="RecycleHub"
+                >
+
+                    <div class="recycler-information">
+
+                        <h3>
+                            RecycleHub
+                        </h3>
+
+                        <p>
+                            Juhu, Mumbai
+                        </p>
+
+                        <small>
+                            Accepts: Laptops, Monitors, Tablets
+                        </small>
+
+                    </div>
+
+
+                    <div class="recycler-distance">
+                        5.8 km
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="view-recycler-button"
+                        data-recycler="RecycleHub"
+                        data-location="Juhu, Mumbai"
+                        data-distance="5.8 km"
+                        data-accepts="Laptops, Monitors, Tablets"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+
+                <!-- ================= CENTER 4 ================= -->
+                <div
+                    class="recycler-item"
+                    data-recycler="Green Earth Recycling"
+                >
+
+                    <div class="recycler-information">
+
+                        <h3>
+                            Green Earth Recycling
+                        </h3>
+
+                        <p>
+                            Andheri East, Mumbai
+                        </p>
+
+                        <small>
+                            Accepts: Phones, Tablets, Accessories
+                        </small>
+
+                    </div>
+
+
+                    <div class="recycler-distance">
+                        6.2 km
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="view-recycler-button"
+                        data-recycler="Green Earth Recycling"
+                        data-location="Andheri East, Mumbai"
+                        data-distance="6.2 km"
+                        data-accepts="Phones, Tablets, Accessories"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+
+                <!-- ================= CENTER 5 ================= -->
+                <div
+                    class="recycler-item"
+                    data-recycler="CleanTech Solutions"
+                >
+
+                    <div class="recycler-information">
+
+                        <h3>
+                            CleanTech Solutions
+                        </h3>
+
+                        <p>
+                            Goregaon West, Mumbai
+                        </p>
+
+                        <small>
+                            Accepts: Laptops, Phones, Other Electronics
+                        </small>
+
+                    </div>
+
+
+                    <div class="recycler-distance">
+                        8.5 km
+                    </div>
+
+
+                    <button
+                        type="button"
+                        class="view-recycler-button"
+                        data-recycler="CleanTech Solutions"
+                        data-location="Goregaon West, Mumbai"
+                        data-distance="8.5 km"
+                        data-accepts="Laptops, Phones, Other Electronics"
+                    >
+                        View Details
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RECYCLER DETAILS MODAL ================= -->
+            <div class="recycler-modal" id="recyclerModal">
+
+                <div class="recycler-modal-content">
+
+                    <button
+                        type="button"
+                        class="close-modal"
+                        id="closeRecyclerModal"
+                    >
+                        ×
+                    </button>
+
+
+                    <h2 id="modalRecyclerName">
+                        GreenCycle Center
+                    </h2>
+
+
+                    <p id="modalRecyclerLocation">
+                        Andheri West, Mumbai
+                    </p>
+
+
+                    <p>
+                        <strong>Distance:</strong>
+
+                        <span id="modalRecyclerDistance">
+                            2.4 km
+                        </span>
+                    </p>
+
+
+                    <p>
+                        <strong>Accepted Devices:</strong>
+                    </p>
+
+                    <p id="modalRecyclerDevices">
+                        Laptops, Phones, Tablets, Monitors
+                    </p>
+
+
+                    <button
+                        type="button"
+                        class="select-recycler-button"
+                        id="selectRecyclerButton"
+                    >
+                        Select Recycler
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>User Dashboard | EcoLoop</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="user-page">
+
+    <!-- ================= HEADER ================= -->
+    <header class="dashboard-header">
+
+        <a href="index.html" class="logo">
+
+            <div class="logo-image-box">
+                <img src="logo.png" alt="EcoLoop Logo">
+            </div>
+
+            <div class="logo-brand-name">
+                Eco<span>Loop</span>
+            </div>
+
+        </a>
+
+    </header>
+
+
+    <!-- ================= DASHBOARD LAYOUT ================= -->
+    <main class="user-layout">
+
+
+        <!-- ================= SIDEBAR ================= -->
+        <aside class="user-sidebar">
+
+            <!-- USER PROFILE -->
+            <div class="sidebar-profile">
+
+                <div class="profile-circle">
+                    RC
+                </div>
+
+                <div class="profile-info">
+
+                    <h4 id="userName">
+                        Robert
+                    </h4>
+
+                    <p>
+                        User Account
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- SIDEBAR NAVIGATION -->
+            <nav class="sidebar-menu">
+
+                <a href="user.html" class="sidebar-link active">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+
+                <a href="add-ewaste.html" class="sidebar-link">
+                    <span>⊕</span>
+                    Add E-Waste
+                </a>
+
+
+                <a href="find-recycler.html" class="sidebar-link">
+                    <span>⌖</span>
+                    Find Recycler
+                </a>
+
+
+                <!-- Not implemented for Mid-Sem -->
+                <a href="#" class="sidebar-link">
+                    <span>◷</span>
+                    Recycling History
+                </a>
+
+
+                <!-- Not implemented for Mid-Sem -->
+                <a href="#" class="sidebar-link">
+                    <span>♕</span>
+                    My Badges
+                </a>
+
+
+                <a href="#" class="sidebar-link">
+                    <span>♙</span>
+                    Profile
+                </a>
+
+            </nav>
+
+
+            <!-- LOGOUT -->
+            <button
+                type="button"
+                class="logout-button"
+                id="logoutButton"
+            >
+                ⇥ &nbsp; Log out
+            </button>
+
+        </aside>
+
+
+        <!-- ================= MAIN CONTENT ================= -->
+        <section class="user-content">
+
+
+            <!-- DATE -->
+            <p class="dashboard-date">
+                Saturday, 19 September 2026
+            </p>
+
+
+            <!-- TITLE -->
+            <h1 class="user-dashboard-title">
+                User dashboard
+            </h1>
+
+
+            <!-- ================= STAT CARDS ================= -->
+            <div class="user-stats">
+
+
+                <!-- ECOPOINTS -->
+                <div class="user-stat-card ecopoints-card">
+
+                    <p>
+                        EcoPoints
+                    </p>
+
+                    <h2 id="ecoPoints">
+                        1,250
+                    </h2>
+
+                    <small>
+                        +150 this month
+                    </small>
+
+                </div>
+
+
+                <!-- DEVICES RECYCLED -->
+                <div class="user-stat-card devices-card">
+
+                    <p>
+                        Devices Recycled
+                    </p>
+
+                    <h2 id="devicesRecycled">
+                        8
+                    </h2>
+
+                    <small>
+                        +3 this month
+                    </small>
+
+                </div>
+
+
+                <!-- CURRENT BADGE -->
+                <div class="user-stat-card badge-card">
+
+                    <p>
+                        Current Badge
+                    </p>
+
+                    <h2 id="currentBadge">
+                        Eco Warrior
+                    </h2>
+
+                    <small>
+                        Next: Green Champion
+                    </small>
+
+                </div>
+
+
+                <!-- E-WASTE RECYCLED -->
+                <div class="user-stat-card impact-card">
+
+                    <p>
+                        E-Waste Recycled
+                    </p>
+
+                    <h2>
+                        3,420 kg
+                    </h2>
+
+                    <small>
+                        Confirmed recycling activity
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================= RECENT RECYCLING ================= -->
+            <div class="recent-recycling-card">
+
+
+                <!-- CARD HEADER -->
+                <div class="recent-heading">
+
+                    <h2>
+                        Recent recycling
+                    </h2>
+
+                    <a href="#">
+                        View all requests
+                    </a>
+
+                </div>
+
+
+                <!-- ================= TABLE ================= -->
+                <div class="table-container">
+
+                    <table class="recycling-table">
+
+                        <thead>
+
+                            <tr>
+                                <th>Device</th>
+                                <th>Date</th>
+                                <th>Recycler</th>
+                                <th>Status</th>
+                            </tr>
+
+                        </thead>
+
+
+                        <tbody id="userRecyclingTable">
+
+
+                            <!-- DEVICE 1 -->
+                            <tr data-request-id="1">
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▰
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Dell Inspiron Laptop
+                                            </strong>
+
+                                            <small>
+                                                Laptops
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Sep 19
+                                </td>
+
+                                <td>
+                                    GreenCycle Center
+                                </td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        ● Pending
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- DEVICE 2 -->
+                            <tr data-request-id="2">
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▯
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                OnePlus 9 Phone
+                                            </strong>
+
+                                            <small>
+                                                Phones &amp; tablets
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Sep 19
+                                </td>
+
+                                <td>
+                                    Eco Center
+                                </td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        ● Pending
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- DEVICE 3 -->
+                            <tr data-request-id="3">
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▣
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                LG 27" Monitor
+                                            </strong>
+
+                                            <small>
+                                                TVs &amp; monitors
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Sep 18
+                                </td>
+
+                                <td>
+                                    Recycle Hub
+                                </td>
+
+                                <td>
+
+                                    <span class="status scheduled">
+                                        ● Scheduled
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- DEVICE 4 -->
+                            <tr data-request-id="4">
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▯
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Samsung Galaxy S21
+                                            </strong>
+
+                                            <small>
+                                                Phones &amp; tablets
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Sep 18
+                                </td>
+
+                                <td>
+                                    Green Earth Recycling
+                                </td>
+
+                                <td>
+
+                                    <span class="status pending">
+                                        ● Pending
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+
+                            <!-- DEVICE 5 -->
+                            <tr data-request-id="5">
+
+                                <td>
+
+                                    <div class="device-info">
+
+                                        <div class="device-icon">
+                                            ▰
+                                        </div>
+
+                                        <div>
+
+                                            <strong>
+                                                Lenovo ThinkPad T14
+                                            </strong>
+
+                                            <small>
+                                                Laptops
+                                            </small>
+
+                                        </div>
+
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    Sep 17
+                                </td>
+
+                                <td>
+                                    Eco Center
+                                </td>
+
+                                <td>
+
+                                    <span class="status scheduled">
+                                        ● Scheduled
+                                    </span>
+
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
